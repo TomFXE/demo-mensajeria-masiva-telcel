@@ -23,12 +23,12 @@ jobs:
 
       - name: Build Angular app
         run: |
-          npm run build -- --configuration production --base-href "/los-robles-residencial/"
+          npm run build -- --configuration production --base-href "/demo-mensajeria-masiva-telcel/"
 
       - name: Upload build to artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/los-robles-residencial
+          path: dist/demo-mensajeria-masiva-telcel
 
   deploy:
     needs: build
